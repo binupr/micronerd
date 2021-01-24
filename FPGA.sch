@@ -1,0 +1,386 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L FPGA_Lattice:ICE40UP5K-SG48ITR U1
+U 1 1 5EEEA49D
+P 2600 3200
+F 0 "U1" H 2930 3253 50  0000 L CNN
+F 1 "ICE40UP5K-SG48ITR" H 2930 3162 50  0000 L CNN
+F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 2600 1850 50  0001 C CNN
+F 3 "http://www.latticesemi.com/Products/FPGAandCPLD/iCE40Ultra" H 2200 4200 50  0001 C CNN
+	1    2600 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR01
+U 1 1 5EEF455E
+P 2600 1800
+F 0 "#PWR01" H 2600 1650 50  0001 C CNN
+F 1 "+3.3V" H 2615 1973 50  0000 C CNN
+F 2 "" H 2600 1800 50  0001 C CNN
+F 3 "" H 2600 1800 50  0001 C CNN
+	1    2600 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 2100 2600 1800
+Text GLabel 1750 2600 0    50   Input ~ 0
+B0
+Wire Wire Line
+	1750 2600 2200 2600
+Text GLabel 1750 2700 0    50   Input ~ 0
+R0
+Text GLabel 1750 2800 0    50   Input ~ 0
+B1
+Text GLabel 1750 2900 0    50   Input ~ 0
+R1
+Text GLabel 1750 3000 0    50   Input ~ 0
+A0
+Text GLabel 1750 3100 0    50   Input ~ 0
+A2
+Text GLabel 1750 3200 0    50   Input ~ 0
+SCLK
+Text GLabel 1750 3300 0    50   Input ~ 0
+BLANK
+Text GLabel 1750 3400 0    50   Input ~ 0
+A1
+Text GLabel 1750 3500 0    50   Input ~ 0
+LATCH
+Text GLabel 1750 3600 0    50   Input ~ 0
+A3
+Text GLabel 1750 3700 0    50   Input ~ 0
+G0
+Text GLabel 1750 3800 0    50   Input ~ 0
+A4
+Text GLabel 1750 3900 0    50   Input ~ 0
+G1
+Wire Wire Line
+	1750 2700 2200 2700
+Wire Wire Line
+	1750 2800 2200 2800
+Wire Wire Line
+	1750 2900 2200 2900
+Wire Wire Line
+	1750 3000 2200 3000
+Wire Wire Line
+	1750 3100 2200 3100
+Wire Wire Line
+	1750 3200 2200 3200
+Wire Wire Line
+	1750 3300 2200 3300
+Wire Wire Line
+	1750 3400 2200 3400
+Wire Wire Line
+	1750 3500 2200 3500
+Wire Wire Line
+	1750 3600 2200 3600
+Wire Wire Line
+	1750 3700 2200 3700
+Wire Wire Line
+	1750 3800 2200 3800
+Wire Wire Line
+	1750 3900 2200 3900
+$Comp
+L FPGA_Lattice:ICE40UP5K-SG48ITR U1
+U 2 1 5EF00B09
+P 4950 3200
+F 0 "U1" H 4950 2125 50  0000 C CNN
+F 1 "ICE40UP5K-SG48ITR" H 4950 2034 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 4950 1850 50  0001 C CNN
+F 3 "http://www.latticesemi.com/Products/FPGAandCPLD/iCE40Ultra" H 4550 4200 50  0001 C CNN
+	2    4950 3200
+	1    0    0    -1  
+$EndComp
+Text GLabel 4200 2500 0    50   Input ~ 0
+RST
+Text GLabel 4200 2800 0    50   Input ~ 0
+D7
+Text GLabel 4200 2900 0    50   Input ~ 0
+D6
+Text GLabel 4200 3000 0    50   Input ~ 0
+D5
+Text GLabel 4200 3100 0    50   Input ~ 0
+D4
+Text GLabel 4200 3200 0    50   Input ~ 0
+D3
+Text GLabel 4200 3300 0    50   Input ~ 0
+D0
+Text GLabel 4200 3400 0    50   Input ~ 0
+D2
+Text GLabel 4200 3500 0    50   Input ~ 0
+D1
+Text GLabel 4200 3800 0    50   Input ~ 0
+SDO
+Text GLabel 4200 3900 0    50   Input ~ 0
+SDI
+Text GLabel 4200 4000 0    50   Input ~ 0
+SCK
+Text GLabel 4200 4100 0    50   Input ~ 0
+CS
+Wire Wire Line
+	4200 2800 4450 2800
+Wire Wire Line
+	4200 2900 4450 2900
+Wire Wire Line
+	4200 3000 4450 3000
+Wire Wire Line
+	4200 3100 4450 3100
+Wire Wire Line
+	4200 3200 4450 3200
+Wire Wire Line
+	4200 3300 4450 3300
+Wire Wire Line
+	4200 3400 4450 3400
+Wire Wire Line
+	4200 3500 4450 3500
+Wire Wire Line
+	4200 3800 4450 3800
+Wire Wire Line
+	4200 3900 4450 3900
+Wire Wire Line
+	4200 4000 4450 4000
+Wire Wire Line
+	4200 4100 4450 4100
+$Comp
+L power:+3.3V #PWR02
+U 1 1 5EF09843
+P 4350 1800
+F 0 "#PWR02" H 4350 1650 50  0001 C CNN
+F 1 "+3.3V" H 4365 1973 50  0000 C CNN
+F 2 "" H 4350 1800 50  0001 C CNN
+F 3 "" H 4350 1800 50  0001 C CNN
+	1    4350 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR03
+U 1 1 5EF0A927
+P 4950 1800
+F 0 "#PWR03" H 4950 1650 50  0001 C CNN
+F 1 "+3.3V" H 4965 1973 50  0000 C CNN
+F 2 "" H 4950 1800 50  0001 C CNN
+F 3 "" H 4950 1800 50  0001 C CNN
+	1    4950 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 1800 4950 2100
+Wire Wire Line
+	4200 2500 4350 2500
+$Comp
+L Device:R R1
+U 1 1 5EF0C6A4
+P 4350 2100
+F 0 "R1" H 4420 2146 50  0000 L CNN
+F 1 "10K" H 4420 2055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4280 2100 50  0001 C CNN
+F 3 "~" H 4350 2100 50  0001 C CNN
+	1    4350 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 1800 4350 1950
+Wire Wire Line
+	4350 2250 4350 2500
+Connection ~ 4350 2500
+Wire Wire Line
+	4350 2500 4450 2500
+$Comp
+L power:+3.3V #PWR06
+U 1 1 5EF0DFD8
+P 5650 1800
+F 0 "#PWR06" H 5650 1650 50  0001 C CNN
+F 1 "+3.3V" H 5665 1973 50  0000 C CNN
+F 2 "" H 5650 1800 50  0001 C CNN
+F 3 "" H 5650 1800 50  0001 C CNN
+	1    5650 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5EF0F2D4
+P 5650 2100
+F 0 "R2" H 5720 2146 50  0000 L CNN
+F 1 "2.2K" H 5720 2055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5580 2100 50  0001 C CNN
+F 3 "~" H 5650 2100 50  0001 C CNN
+	1    5650 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 1800 5650 1950
+Wire Wire Line
+	5650 2250 5650 2500
+Wire Wire Line
+	5650 2500 5450 2500
+$Comp
+L Device:LED D1
+U 1 1 5EF10BB3
+P 5650 2850
+F 0 "D1" V 5689 2732 50  0000 R CNN
+F 1 "LED" V 5598 2732 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5650 2850 50  0001 C CNN
+F 3 "~" H 5650 2850 50  0001 C CNN
+	1    5650 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5EF12201
+P 5650 3350
+F 0 "#PWR07" H 5650 3100 50  0001 C CNN
+F 1 "GND" H 5655 3177 50  0000 C CNN
+F 2 "" H 5650 3350 50  0001 C CNN
+F 3 "" H 5650 3350 50  0001 C CNN
+	1    5650 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 2700 5650 2500
+Connection ~ 5650 2500
+Wire Wire Line
+	5650 3000 5650 3350
+$Comp
+L FPGA_Lattice:ICE40UP5K-SG48ITR U1
+U 3 1 5EF1394F
+P 7300 2800
+F 0 "U1" H 7630 2903 50  0000 L CNN
+F 1 "ICE40UP5K-SG48ITR" H 7630 2812 50  0000 L CNN
+F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 7300 1450 50  0001 C CNN
+F 3 "http://www.latticesemi.com/Products/FPGAandCPLD/iCE40Ultra" H 6900 3800 50  0001 C CNN
+	3    7300 2800
+	1    0    0    -1  
+$EndComp
+Text GLabel 6650 2600 0    50   Input ~ 0
+D13
+Text GLabel 6650 2700 0    50   Input ~ 0
+D12
+Text GLabel 6650 2800 0    50   Input ~ 0
+D15
+Text GLabel 6650 2900 0    50   Input ~ 0
+D11
+Text GLabel 6650 3000 0    50   Input ~ 0
+D14
+Text GLabel 6650 3100 0    50   Input ~ 0
+D10
+Text GLabel 6650 3200 0    50   Input ~ 0
+D8
+Text GLabel 6650 3300 0    50   Input ~ 0
+D9
+Wire Wire Line
+	6650 2600 6900 2600
+Wire Wire Line
+	6650 2700 6900 2700
+Wire Wire Line
+	6650 2800 6900 2800
+Wire Wire Line
+	6650 2900 6900 2900
+Wire Wire Line
+	6650 3000 6900 3000
+Wire Wire Line
+	6650 3100 6900 3100
+Wire Wire Line
+	6650 3200 6900 3200
+Wire Wire Line
+	6650 3300 6900 3300
+$Comp
+L power:+3.3V #PWR010
+U 1 1 5EF1FA86
+P 7300 1800
+F 0 "#PWR010" H 7300 1650 50  0001 C CNN
+F 1 "+3.3V" H 7315 1973 50  0000 C CNN
+F 2 "" H 7300 1800 50  0001 C CNN
+F 3 "" H 7300 1800 50  0001 C CNN
+	1    7300 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 2100 7300 1800
+$Comp
+L power:+3.3V #PWR04
+U 1 1 5EF96D16
+P 5000 5100
+F 0 "#PWR04" H 5000 4950 50  0001 C CNN
+F 1 "+3.3V" H 5015 5273 50  0000 C CNN
+F 2 "" H 5000 5100 50  0001 C CNN
+F 3 "" H 5000 5100 50  0001 C CNN
+	1    5000 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR08
+U 1 1 5EF97372
+P 7250 5050
+F 0 "#PWR08" H 7250 4900 50  0001 C CNN
+F 1 "+3.3V" H 7265 5223 50  0000 C CNN
+F 2 "" H 7250 5050 50  0001 C CNN
+F 3 "" H 7250 5050 50  0001 C CNN
+	1    7250 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5EF97B62
+P 5000 5400
+F 0 "C1" H 5115 5446 50  0000 L CNN
+F 1 "100n" H 5115 5355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5038 5250 50  0001 C CNN
+F 3 "~" H 5000 5400 50  0001 C CNN
+	1    5000 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5EF97F84
+P 7250 5350
+F 0 "C2" H 7365 5396 50  0000 L CNN
+F 1 "100n" H 7365 5305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7288 5200 50  0001 C CNN
+F 3 "~" H 7250 5350 50  0001 C CNN
+	1    7250 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5EF98A05
+P 5000 5800
+F 0 "#PWR05" H 5000 5550 50  0001 C CNN
+F 1 "GND" H 5005 5627 50  0000 C CNN
+F 2 "" H 5000 5800 50  0001 C CNN
+F 3 "" H 5000 5800 50  0001 C CNN
+	1    5000 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5EF99011
+P 7250 5800
+F 0 "#PWR09" H 7250 5550 50  0001 C CNN
+F 1 "GND" H 7255 5627 50  0000 C CNN
+F 2 "" H 7250 5800 50  0001 C CNN
+F 3 "" H 7250 5800 50  0001 C CNN
+	1    7250 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 5250 5000 5100
+Wire Wire Line
+	5000 5800 5000 5550
+Wire Wire Line
+	7250 5800 7250 5500
+Wire Wire Line
+	7250 5200 7250 5050
+$EndSCHEMATC
