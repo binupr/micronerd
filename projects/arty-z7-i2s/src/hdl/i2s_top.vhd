@@ -24,4 +24,3 @@ architecture struct of i2s_top is
 begin
 
 end architecture struct;
-  

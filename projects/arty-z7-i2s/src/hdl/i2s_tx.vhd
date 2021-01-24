@@ -26,4 +26,3 @@ architecture rtl of i2s_tx is
 begin
 
 end architecture rtl;
-  
