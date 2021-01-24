@@ -1,0 +1,283 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74xx:74HC245 U7
+U 1 1 5EFA2D92
+P 5600 3850
+F 0 "U7" H 5600 4831 50  0000 C CNN
+F 1 "74HC245" H 5600 4740 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W8.89mm_SMDSocket_LongPads" H 5600 3850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC245" H 5600 3850 50  0001 C CNN
+	1    5600 3850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC245 U6
+U 1 1 5EFA5A52
+P 3000 3550
+F 0 "U6" H 3000 2569 50  0000 C CNN
+F 1 "74HC245" H 3000 2660 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W8.89mm_SMDSocket_LongPads" H 3000 3550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC245" H 3000 3550 50  0001 C CNN
+	1    3000 3550
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3000 2750 3000 2500
+Wire Wire Line
+	3000 2500 2350 2500
+Wire Wire Line
+	2350 2500 2350 3050
+Wire Wire Line
+	2350 3050 2500 3050
+$Comp
+L power:+5V #PWR039
+U 1 1 5EFACB75
+P 5600 2650
+F 0 "#PWR039" H 5600 2500 50  0001 C CNN
+F 1 "+5V" H 5615 2823 50  0000 C CNN
+F 2 "" H 5600 2650 50  0001 C CNN
+F 3 "" H 5600 2650 50  0001 C CNN
+	1    5600 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR033
+U 1 1 5EFAD256
+P 1950 3150
+F 0 "#PWR033" H 1950 3000 50  0001 C CNN
+F 1 "+5V" V 1965 3278 50  0000 L CNN
+F 2 "" H 1950 3150 50  0001 C CNN
+F 3 "" H 1950 3150 50  0001 C CNN
+	1    1950 3150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5600 3050 5600 2650
+Wire Wire Line
+	2500 3150 1950 3150
+$Comp
+L power:+5V #PWR034
+U 1 1 5EFADCA9
+P 3000 4650
+F 0 "#PWR034" H 3000 4500 50  0001 C CNN
+F 1 "+5V" H 3015 4823 50  0000 C CNN
+F 2 "" H 3000 4650 50  0001 C CNN
+F 3 "" H 3000 4650 50  0001 C CNN
+	1    3000 4650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3000 4650 3000 4350
+$Comp
+L power:+5V #PWR040
+U 1 1 5EFAE9CB
+P 6500 4250
+F 0 "#PWR040" H 6500 4100 50  0001 C CNN
+F 1 "+5V" V 6515 4378 50  0000 L CNN
+F 2 "" H 6500 4250 50  0001 C CNN
+F 3 "" H 6500 4250 50  0001 C CNN
+	1    6500 4250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6500 4250 6100 4250
+Wire Wire Line
+	6100 4350 6300 4350
+Wire Wire Line
+	6300 4350 6300 4750
+Wire Wire Line
+	6300 4750 5600 4750
+Wire Wire Line
+	5600 4750 5600 4650
+Text GLabel 2000 3350 0    50   Input ~ 0
+R0
+Text GLabel 2000 3450 0    50   Input ~ 0
+B0
+Text GLabel 2000 3550 0    50   Input ~ 0
+R1
+Text GLabel 2000 3650 0    50   Input ~ 0
+B1
+Text GLabel 2000 3750 0    50   Input ~ 0
+A0
+Text GLabel 2000 3850 0    50   Input ~ 0
+A2
+Text GLabel 2000 3950 0    50   Input ~ 0
+SCLK
+Text GLabel 2000 4050 0    50   Input ~ 0
+BLANK
+Text GLabel 6450 3350 2    50   Input ~ 0
+G0
+Text GLabel 6450 3550 2    50   Input ~ 0
+G1
+Text GLabel 6450 3650 2    50   Input ~ 0
+A4
+Text GLabel 6450 3750 2    50   Input ~ 0
+A1
+Text GLabel 6450 3850 2    50   Input ~ 0
+A3
+Text GLabel 6450 3950 2    50   Input ~ 0
+LATCH
+Wire Wire Line
+	2000 3350 2500 3350
+Wire Wire Line
+	2000 3450 2500 3450
+Wire Wire Line
+	2000 3550 2500 3550
+Wire Wire Line
+	2000 3650 2500 3650
+Wire Wire Line
+	2000 3750 2500 3750
+Wire Wire Line
+	2000 3850 2500 3850
+Wire Wire Line
+	2000 3950 2500 3950
+Wire Wire Line
+	2000 4050 2500 4050
+$Comp
+L Connector_Generic:Conn_02x08_Odd_Even J2
+U 1 1 5EFB2B20
+P 4250 3650
+F 0 "J2" H 4300 4167 50  0000 C CNN
+F 1 "Conn_02x08_Odd_Even" H 4300 4076 50  0000 C CNN
+F 2 "Connector_Harwin:Harwin_Gecko-G125-MVX1605L1X_2x08_P1.25mm_Vertical" H 4250 3650 50  0001 C CNN
+F 3 "~" H 4250 3650 50  0001 C CNN
+	1    4250 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 3350 3500 3350
+Wire Wire Line
+	3500 3450 4050 3450
+Wire Wire Line
+	4050 3550 3500 3550
+Wire Wire Line
+	4050 3650 3500 3650
+Wire Wire Line
+	4050 3750 3500 3750
+Wire Wire Line
+	4050 3850 3500 3850
+Wire Wire Line
+	4050 3950 3500 3950
+Wire Wire Line
+	4050 4050 3500 4050
+Wire Wire Line
+	5100 3350 4550 3350
+Wire Wire Line
+	5100 3550 4550 3550
+Wire Wire Line
+	5100 3650 4550 3650
+Wire Wire Line
+	5100 3750 4550 3750
+Wire Wire Line
+	5100 3850 4550 3850
+Wire Wire Line
+	5100 3950 4550 3950
+Text GLabel 4700 3450 2    50   Input ~ 0
+GND
+Text GLabel 4700 4050 2    50   Input ~ 0
+GND
+Wire Wire Line
+	4700 3450 4550 3450
+Wire Wire Line
+	4700 4050 4550 4050
+Wire Wire Line
+	6450 3350 6100 3350
+Wire Wire Line
+	6450 3550 6100 3550
+Wire Wire Line
+	6450 3650 6100 3650
+Wire Wire Line
+	6450 3750 6100 3750
+Wire Wire Line
+	6450 3850 6100 3850
+Wire Wire Line
+	6450 3950 6100 3950
+$Comp
+L power:+5V #PWR035
+U 1 1 5EFC0572
+P 3400 5700
+F 0 "#PWR035" H 3400 5550 50  0001 C CNN
+F 1 "+5V" H 3415 5873 50  0000 C CNN
+F 2 "" H 3400 5700 50  0001 C CNN
+F 3 "" H 3400 5700 50  0001 C CNN
+	1    3400 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR037
+U 1 1 5EFC0AB5
+P 4150 5700
+F 0 "#PWR037" H 4150 5550 50  0001 C CNN
+F 1 "+5V" H 4165 5873 50  0000 C CNN
+F 2 "" H 4150 5700 50  0001 C CNN
+F 3 "" H 4150 5700 50  0001 C CNN
+	1    4150 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 5EFC10DB
+P 3400 6000
+F 0 "C11" H 3515 6046 50  0000 L CNN
+F 1 "100n" H 3515 5955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3438 5850 50  0001 C CNN
+F 3 "~" H 3400 6000 50  0001 C CNN
+	1    3400 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C12
+U 1 1 5EFC1798
+P 4150 6000
+F 0 "C12" H 4265 6046 50  0000 L CNN
+F 1 "100n" H 4265 5955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4188 5850 50  0001 C CNN
+F 3 "~" H 4150 6000 50  0001 C CNN
+	1    4150 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR036
+U 1 1 5EFC1D3E
+P 3400 6450
+F 0 "#PWR036" H 3400 6200 50  0001 C CNN
+F 1 "GND" H 3405 6277 50  0000 C CNN
+F 2 "" H 3400 6450 50  0001 C CNN
+F 3 "" H 3400 6450 50  0001 C CNN
+	1    3400 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR038
+U 1 1 5EFC1D94
+P 4150 6450
+F 0 "#PWR038" H 4150 6200 50  0001 C CNN
+F 1 "GND" H 4155 6277 50  0000 C CNN
+F 2 "" H 4150 6450 50  0001 C CNN
+F 3 "" H 4150 6450 50  0001 C CNN
+	1    4150 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 5850 3400 5700
+Wire Wire Line
+	3400 6450 3400 6150
+Wire Wire Line
+	4150 6450 4150 6150
+Wire Wire Line
+	4150 5850 4150 5700
+$EndSCHEMATC
