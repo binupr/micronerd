@@ -17,7 +17,7 @@ entity i2s_rom_controller is
   port
   (
     i_mclk : in std_logic;
-    i_sysrst : in std_logic;
+    i_sys_rst : in std_logic;
     i_rom_data : in std_logic_vector(g_data_width-1 downto 0);
     i_ready  : in std_logic;
     o_rom_addr  : out std_logic;
